@@ -1,13 +1,17 @@
 const btn = document.querySelector(".btn");
 const colorType = document.querySelector(".color");
 
+const hex = [1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+
 btn.addEventListener("click", function () {
-  const color = ["red", "blue", "yellow", "#125D73", "rgb (209, 27, 21)"];
-  const randomColor = Math.floor(Math.random() * color.length);
-  document.body.style.backgroundColor = color[randomColor];
-  colorType.textContent = color[randomColor];
+  let hexColor = "#";
+  for (let i = 0; i < 6; i++) {
+    hexColor += hex[randomColor()];
+  }
+  document.body.style.backgroundColor = hexColor;
+  colorType.textContent = hexColor;
 });
 
-// function randomColor () {
-// Math.random().color.length;
-// }
+function randomColor() {
+  return Math.floor(Math.random() * hex.length);
+}

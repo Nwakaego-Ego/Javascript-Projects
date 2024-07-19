@@ -1,18 +1,7 @@
-body {
-  background-color: #f2f7fe;
-}
-
-.underline {
-  width: 50px;
-  height: 5px;
-  background-color: red;
-  margin: 0 auto;
-}
-
-img {
+/* img {
   border-radius: 50%;
-}
-
+} */
+/* 
 button {
   padding: 12px;
   font-size: 15px;
@@ -22,9 +11,11 @@ button {
   border-radius: 4px;
   margin: 6px;
   cursor: pointer;
-}
+} */
 
-.container {
+/* To center an intem in the middle of the page */
+
+/* .container {
   border: 1;
   height: 100vh;
   display: flex;
@@ -34,8 +25,181 @@ button {
 
 .sub-container {
   text-align: center;
+} */
+
+/* TODAY */
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.back .front {
-  cursor: pointer;
+.container {
+  background-color: red;
 }
+
+.navbar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+}
+
+.line {
+  height: 3px;
+  width: 30px;
+  background-color: green;
+  margin: 5px;
+  display: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 765px) {
+  .navbar {
+    background-color: yellow;
+  }
+
+  .link {
+    position: absolute;
+    top: 85px;
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .line {
+    display: block;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 18px;
+    left: 90%;
+  }
+}
+
+.show {
+  height: 151px;
+  display: block;
+  position: absolute;
+  top: 85px;
+}
+
+/* Chatrgpt */
+
+/* body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: red;
+}
+
+.navbar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.line {
+  height: 3px;
+  width: 30px;
+  background-color: green;
+  margin: 5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+@media (max-width: 765px) {
+  .link {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .link.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .link.show ul {
+    flex-direction: column;
+  }
+}
+
+.show {
+  display: block;
+} */

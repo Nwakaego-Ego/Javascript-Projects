@@ -29,7 +29,7 @@ button {
 
 /* TODAY */
 
-body {
+/* body {
   margin: 0;
   padding: 0;
 }
@@ -105,18 +105,16 @@ a {
     top: 18px;
     left: 90%;
   }
-}
+} */
 
-.show {
-  height: 151px;
+/* .show {
+
   display: block;
   position: absolute;
   top: 85px;
-}
+} */
 
-/* Chatrgpt */
-
-/* body {
+body {
   margin: 0;
   padding: 0;
 }
@@ -130,17 +128,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
-  color: white;
 }
 
 h1 {
   margin: 0;
 }
 
-.link {
-  display: flex;
-  flex-direction: row;
+.line {
+  height: 3px;
+  width: 30px;
+  background-color: green;
+  margin: 5px;
+  display: none;
 }
 
 ul {
@@ -158,48 +157,44 @@ li {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
-.line {
-  height: 3px;
-  width: 30px;
-  background-color: green;
-  margin: 5px;
+.link {
+  display: flex;
+  flex-direction: row;
 }
-
-.hamburger {
-  display: none;
-}
-
 
 @media (max-width: 765px) {
+  .navbar {
+    background-color: yellow;
+  }
+
   .link {
+    /* position: absolute;
+    top: 85px; */
     display: none;
   }
 
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .line {
+    display: block;
+  }
+
   .hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-
-  .link.show {
-    display: flex;
-    flex-direction: column;
     position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #333;
-    width: 200px;
-    padding: 10px;
-  }
-
-  .link.show ul {
-    flex-direction: column;
+    top: 18px;
+    left: 90%;
+    display: block;
   }
 }
 
 .show {
   display: block;
-} */
+  position: absolute;
+  top: 85px;
+}

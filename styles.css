@@ -27,126 +27,68 @@ button {
   text-align: center;
 } */
 
-/* TODAY */
-
-/* body {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  background-color: red;
-}
-
-.navbar {
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-h1 {
-  margin: 0;
-}
-
-.line {
-  height: 3px;
-  width: 30px;
-  background-color: green;
-  margin: 5px;
-  display: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-li {
-  list-style: none;
-  font-size: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-.link {
-  display: flex;
-  flex-direction: row;
-}
-
-@media (max-width: 765px) {
-  .navbar {
-    background-color: yellow;
-  }
-
-  .link {
-    position: absolute;
-    top: 85px;
-    display: none;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .line {
-    display: block;
-  }
-
-  .hamburger {
-    position: absolute;
-    top: 18px;
-    left: 90%;
-  }
-} */
-
-/* .show {
-
-  display: block;
-  position: absolute;
-  top: 85px;
-} */
-
 body {
   margin: 0;
   padding: 0;
+  background-color: antiquewhite;
 }
 
 .container {
-  background-color: red;
+  /* background-color: red; */
 }
 
 .navbar {
-  padding: 15px;
-  display: flex;
+  /* padding: 15px; */
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
 }
 
 h1 {
   margin: 0;
+  padding: 10px;
+}
+
+.exit {
+  border: 1px solid transparent;
+  background-color: rgb(196, 189, 189);
+  color: red;
+  font-weight: 900;
+  font-size: 25px;
+  position: absolute;
+  top: 13px;
+  left: 20%;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: absolute;
+  top: 10px; /* Adjust this value to move the entire hamburger menu */
+  left: 90%; /* Adjust this value to move the entire hamburger menu */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 1s ease-in-out; /* Added transition for smooth rotation */
+}
+
+.rotate {
+  transform: rotate(360deg);
 }
 
 .line {
-  height: 3px;
   width: 30px;
+  height: 3px;
   background-color: green;
-  margin: 5px;
-  display: none;
 }
 
 ul {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -161,17 +103,32 @@ a {
 
 .link {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-@media (max-width: 765px) {
+.sidebar {
+  background-color: rgb(196, 189, 189);
+  width: 30%;
+  height: 100vh; /* Adjusted to fill the full viewport height */
+  position: fixed; /* Positioned fixed for better control */
+  top: 0;
+  left: 0;
+  /* Hide sidebar initially */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.open {
+  transform: translateX(0); /* Show sidebar when open class is added */
+}
+
+/* @media (max-width: 765px) {
   .navbar {
     background-color: yellow;
   }
 
   .link {
-    /* position: absolute;
-    top: 85px; */
+    
     display: none;
   }
 
@@ -197,4 +154,4 @@ a {
   display: block;
   position: absolute;
   top: 85px;
-}
+} */
